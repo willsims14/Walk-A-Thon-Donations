@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Walk-A-Thon</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+	<header><h1>Walk-A-Thon</h1></header>
+	<hr>
+	<!-- Holds the table for displaying donation information -->
+	<div id="tableContainer" class="col-sm-12 col-md-4">
+		<h3>Donor Information</h3>
+		<br>
+		<div id="tableDisplay" class="col-sm-12">
+			<table id="table">
+				<tr id="tableHeaders">
+					<td class="col-sm-3"><strong>Name</strong></td>
+					<td class="col-sm-3"><strong>Email</strong></td>
+					<td class="col-sm-3"><strong>Donation Amount</strong></td>
+					<td class="col-sm-3"><strong>Donation Type</strong></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!-- Holds all content that collects information from user -->
+	<div id="formContainer" class="col-sm-12 col-md-8">
+		<h3>New Donation Form:</h3>
+		<br>
+		<div id="formDisplay" class="col-sm-12">
+			<div id="userInfoContainer" class="row">
+				<label for="name">Name: </label><input type="text" id="name"><br>
+				<label for="mail">Email: </label><input type="email" id="mail"><br>
+				<label for="amount">Donation Amount: </label><input type="number" id="amount">
+			</div>
+			<div id="donationTypeContainer" class="row">
+				<label>Donation Type:</label><br>
+				<input type="radio" name="donationType" value="Per Lap" id="perLap">Per Lap<br>
+				<input type="radio" name="donationType" value="Single Amount" id="singleAmount">Single Amount<br>
+			</div>
+			<div class="row buttonContainer">
+				<input type="submit" id="submitButton" value="Submit">
+				<input type="button" id="clearButton" value="Clear">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="iife.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
