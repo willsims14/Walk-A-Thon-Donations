@@ -30,7 +30,7 @@ var Donations = (function(olDonations){
 
 			var donationAmountCell = row.insertCell(2);
 			donationAmountCell.className = "donation col-sm-3";
-			donationAmountCell.innerHTML = donorObject.donation_amount;
+			donationAmountCell.innerHTML = "$" + donorObject.donation_amount;
 
 			var donationTypeCell = row.insertCell(3);
 			donationTypeCell.className = "donation col-sm-3";
